@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/boarding/boarding_ui.dart';
+import 'package:jsdt_app/feature/presentation/disclaimer/disclaimer_ui.dart';
 
 class AppRoute {
   static String initialRoute = BoardingUi.namePath;
@@ -7,6 +8,10 @@ class AppRoute {
     GetPage(
       name: BoardingUi.namePath,
       page: () => const BoardingUi(),
+    ),
+    GetPage(
+      name: DisclaimerUi.namePath,
+      page: () => const DisclaimerUi(),
     ),
   ];
 }

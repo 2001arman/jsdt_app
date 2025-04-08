@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/disclaimer/disclaimer_ui.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 
 class BoardingUi extends StatelessWidget {
@@ -30,7 +31,7 @@ class BoardingUi extends StatelessWidget {
               ),
               const SizedBox(height: 40),
               GestureDetector(
-                onTap: () {},
+                onTap: () => Get.toNamed(DisclaimerUi.namePath),
                 child: Row(
                   children: [
                     Image.asset('assets/icons/ellipse.png'),
@@ -44,7 +45,7 @@ class BoardingUi extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               GestureDetector(
-                onTap: () {},
+                onTap: () => Get.toNamed(DisclaimerUi.namePath),
                 child: Row(
                   children: [
                     Image.asset('assets/icons/ellipse.png'),

@@ -5,6 +5,7 @@ Color kWhiteColor = const Color(0xFFFFFFFF);
 Color kBlackColor = const Color(0xFF000000);
 Color kMainColor = const Color(0xFF0F2D47);
 Color kGreyColor = const Color(0xFFDBD7D7);
+Color kWhiteGreyColor = const Color(0xFFF4F4F4);
 
 TextStyle whiteTextStyle = GoogleFonts.inter(
   color: kWhiteColor,
