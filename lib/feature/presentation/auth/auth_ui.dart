@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/auth/auth_logic.dart';
+import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/custom_text_form_field.dart';
 import 'package:jsdt_app/utility/shared/widgets/main_button.dart';
@@ -176,7 +177,7 @@ class AuthUi extends StatelessWidget {
             ),
             MainButton(
               title: 'Save',
-              onTap: () {},
+              onTap: () => Get.toNamed(HomeUi.namePath),
             ),
           ],
         ),
