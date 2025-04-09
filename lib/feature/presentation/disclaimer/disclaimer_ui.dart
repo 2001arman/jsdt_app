@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 
 class DisclaimerUi extends StatelessWidget {
-  static const String namePath = '/disclaimer_ui';
-  const DisclaimerUi({super.key});
+  const DisclaimerUi({super.key, this.onTapAgreed});
+  final VoidCallback? onTapAgreed;
 
   @override
   Widget build(BuildContext context) {
@@ -125,8 +125,14 @@ class DisclaimerUi extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  button(text: 'Decline', onTap: Get.back),
-                  button(text: 'I ACCEPT', onTap: Get.back),
+                  button(
+                    text: 'Decline',
+                    onTap: Get.back,
+                  ),
+                  button(
+                    text: 'I ACCEPT',
+                    onTap: onTapAgreed ?? Get.back,
+                  ),
                 ],
               ),
             ],

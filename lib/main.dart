@@ -18,6 +18,19 @@ class MyApp extends StatelessWidget {
       navigatorKey: Get.key,
       getPages: AppRoute.routes,
       initialRoute: AppRoute.initialRoute,
+      theme: ThemeData(
+        menuTheme: MenuThemeData(
+          style: MenuStyle(
+            padding: WidgetStateProperty.all(EdgeInsets.zero),
+          ),
+        ),
+        menuButtonTheme: MenuButtonThemeData(
+          style: ButtonStyle(
+            padding: WidgetStateProperty.all(EdgeInsets.zero),
+            visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
+          ),
+        ),
+      ),
       builder: (context, child) {
         child = EasyLoading.init()(context, child);
         return MediaQuery(data: MediaQuery.of(context), child: child);
