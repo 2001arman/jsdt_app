@@ -122,23 +122,28 @@ class HomeUi extends StatelessWidget {
                 ),
                 itemCount: state.homeMenus.length,
                 padding: const EdgeInsets.all(20),
-                itemBuilder: (context, index) => Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: defaultBoxShadow,
-                    color: kWhiteColor,
+                itemBuilder: (context, index) => GestureDetector(
+                  onTap: () => Get.toNamed(
+                    state.homeMenus[index].path,
                   ),
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Expanded(
-                        child: Image.asset(state.homeMenus[index].image),
-                      ),
-                      Text(
-                        state.homeMenus[index].title,
-                        style: mainTextStyle.copyWith(fontWeight: bold),
-                      ),
-                    ],
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: defaultBoxShadow,
+                      color: kWhiteColor,
+                    ),
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Image.asset(state.homeMenus[index].image),
+                        ),
+                        Text(
+                          state.homeMenus[index].title,
+                          style: mainTextStyle.copyWith(fontWeight: bold),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

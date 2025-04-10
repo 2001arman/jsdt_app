@@ -1,21 +1,69 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
+
 class HomeState {
   List<HomeMenu> homeMenus = [
-    HomeMenu(title: 'IEB', image: 'assets/home/IEB.png'),
-    HomeMenu(title: 'Notes', image: 'assets/home/notes.png'),
-    HomeMenu(title: 'Quiz Tests', image: 'assets/home/quiz.png'),
-    HomeMenu(title: 'Activities', image: 'assets/home/activities.png'),
-    HomeMenu(title: 'Practice Problems', image: 'assets/home/practice.png'),
-    HomeMenu(title: 'March Tests', image: 'assets/home/march.png'),
-    HomeMenu(title: 'June Exams', image: 'assets/home/june.png'),
-    HomeMenu(title: 'Preliminary Exams', image: 'assets/home/preliminery.png'),
-    HomeMenu(title: 'Examplers', image: 'assets/home/examplers.png'),
-    HomeMenu(title: 'November Exams', image: 'assets/home/november.png'),
+    HomeMenu(
+      title: 'IEB',
+      image: 'assets/home/IEB.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Notes',
+      image: 'assets/home/notes.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Quiz Tests',
+      image: 'assets/home/quiz.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Activities',
+      image: 'assets/home/activities.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Practice Problems',
+      image: 'assets/home/practice.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'March Tests',
+      image: 'assets/home/march.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'June Exams',
+      image: 'assets/home/june.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Preliminary Exams',
+      image: 'assets/home/preliminery.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'Examplers',
+      image: 'assets/home/examplers.png',
+      path: IebUi.namePath,
+    ),
+    HomeMenu(
+      title: 'November Exams',
+      image: 'assets/home/november.png',
+      path: IebUi.namePath,
+    ),
   ];
 }
 
 class HomeMenu {
   final String title;
   final String image;
+  final String path;
 
-  HomeMenu({required this.title, required this.image});
+  HomeMenu({
+    required this.title,
+    required this.image,
+    required this.path,
+  });
 }
