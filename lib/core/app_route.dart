@@ -8,6 +8,8 @@ import 'package:jsdt_app/feature/presentation/home/ieb/ieb_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 
 class AppRoute {
   static String initialRoute = BoardingUi.namePath;
@@ -35,6 +37,11 @@ class AppRoute {
       name: NotesUi.namePath,
       page: () => NotesUi(),
       binding: NotesBinding(),
+    ),
+    GetPage(
+      name: QuizUi.namePath,
+      page: () => QuizUi(),
+      binding: QuizBinding(),
     ),
   ];
 }
