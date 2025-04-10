@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
 
 class HomeState {
   List<HomeMenu> homeMenus = [
@@ -11,7 +12,7 @@ class HomeState {
     HomeMenu(
       title: 'Notes',
       image: 'assets/home/notes.png',
-      path: IebUi.namePath,
+      path: NotesUi.namePath,
     ),
     HomeMenu(
       title: 'Quiz Tests',

@@ -6,6 +6,8 @@ import 'package:jsdt_app/feature/presentation/home/home_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/notes/notes_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
 
 class AppRoute {
   static String initialRoute = BoardingUi.namePath;
@@ -28,6 +30,11 @@ class AppRoute {
       name: IebUi.namePath,
       page: () => IebUi(),
       binding: IebBinding(),
+    ),
+    GetPage(
+      name: NotesUi.namePath,
+      page: () => NotesUi(),
+      binding: NotesBinding(),
     ),
   ];
 }
