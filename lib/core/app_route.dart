@@ -14,6 +14,8 @@ import 'package:jsdt_app/feature/presentation/home/march/march_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 
@@ -63,6 +65,11 @@ class AppRoute {
       name: JuneUi.namePath,
       page: () => JuneUi(),
       binding: JuneBinding(),
+    ),
+    GetPage(
+      name: PreliminaryUi.namePath,
+      page: () => PreliminaryUi(),
+      binding: PreliminaryBinding(),
     ),
   ];
 }

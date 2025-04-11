@@ -4,6 +4,7 @@ import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/june/june_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 
 class HomeState {
@@ -46,7 +47,7 @@ class HomeState {
     HomeMenu(
       title: 'Preliminary Exams',
       image: 'assets/home/preliminery.png',
-      path: IebUi.namePath,
+      path: PreliminaryUi.namePath,
     ),
     HomeMenu(
       title: 'Examplers',
