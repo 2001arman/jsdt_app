@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/auth/auth_binding.dart';
 import 'package:jsdt_app/feature/presentation/auth/auth_ui.dart';
 import 'package:jsdt_app/feature/presentation/boarding/boarding_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activies_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activities_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/home_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_binding.dart';
@@ -42,6 +44,11 @@ class AppRoute {
       name: QuizUi.namePath,
       page: () => QuizUi(),
       binding: QuizBinding(),
+    ),
+    GetPage(
+      name: ActivitiesUi.namePath,
+      page: () => ActivitiesUi(),
+      binding: ActiviesBinding(),
     ),
   ];
 }
