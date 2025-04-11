@@ -1,43 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:jsdt_app/feature/presentation/home/ieb/ieb_logic.dart';
+import 'package:jsdt_app/feature/presentation/home/march/march_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/button_items.dart';
 
-class IebUi extends StatelessWidget {
-  static const String namePath = '/ieb_page';
-  final logic = Get.find<IebLogic>();
-  final state = Get.find<IebLogic>().state;
-  IebUi({super.key});
+class MarchUi extends StatelessWidget {
+  static const String namePath = '/march_ui';
+  final logic = Get.find<MarchLogic>();
+  final state = Get.find<MarchLogic>().state;
+  MarchUi({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kWhiteColor,
       appBar: AppBar(
-        centerTitle: true,
         backgroundColor: kWhiteColor,
         title: Text(
-          'IEB',
+          'March Tests',
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          Text(
-            'June Exams',
-            style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
-          ),
-          const SizedBox(height: 15),
-          ...state.juneExams.map((data) => ButtonItems(title: data)),
+          ...state.marchTest.map((data) => ButtonItems(title: data)),
           const SizedBox(height: 20),
           Text(
-            'November Exams',
+            'More Papers',
             style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
           ),
           const SizedBox(height: 15),
-          ...state.novExams.map((data) => ButtonItems(title: data)),
+          ...state.marchTestKzn.map((data) => ButtonItems(title: data)),
         ],
       ),
     );

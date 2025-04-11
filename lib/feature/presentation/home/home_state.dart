@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:jsdt_app/feature/presentation/home/activities/activities_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/march/march_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 
@@ -34,7 +35,7 @@ class HomeState {
     HomeMenu(
       title: 'March Tests',
       image: 'assets/home/march.png',
-      path: IebUi.namePath,
+      path: MarchUi.namePath,
     ),
     HomeMenu(
       title: 'June Exams',
