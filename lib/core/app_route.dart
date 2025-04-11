@@ -8,6 +8,8 @@ import 'package:jsdt_app/feature/presentation/home/home_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/june/june_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/june/june_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_binding.dart';
@@ -56,6 +58,11 @@ class AppRoute {
       name: MarchUi.namePath,
       page: () => MarchUi(),
       binding: MarchBinding(),
+    ),
+    GetPage(
+      name: JuneUi.namePath,
+      page: () => JuneUi(),
+      binding: JuneBinding(),
     ),
   ];
 }

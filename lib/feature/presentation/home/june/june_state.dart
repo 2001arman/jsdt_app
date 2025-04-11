@@ -1,0 +1,18 @@
+class JuneState {
+  List<String> juneTest = [
+    '2025',
+    '2024',
+    '2023',
+    '2022',
+    '2021',
+    '2020',
+  ];
+
+  List<String> juneTestKzn = [
+    '2019',
+    '2018',
+    '2017',
+    '2016',
+    '2015',
+  ];
+}
