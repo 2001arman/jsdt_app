@@ -5,6 +5,7 @@ import 'package:jsdt_app/feature/presentation/home/june/june_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/november/november_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/practice/practice_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 
@@ -33,7 +34,7 @@ class HomeState {
     HomeMenu(
       title: 'Practice Problems',
       image: 'assets/home/practice.png',
-      path: IebUi.namePath,
+      path: PracticeUi.namePath,
     ),
     HomeMenu(
       title: 'March Tests',
