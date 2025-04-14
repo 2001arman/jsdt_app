@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_list/quiz_list_logic.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quizez/quizez_ui.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class QuizListUi extends StatelessWidget {
   static const String namePath = '/quiz_list_page';
@@ -108,6 +109,7 @@ class QuizListUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(

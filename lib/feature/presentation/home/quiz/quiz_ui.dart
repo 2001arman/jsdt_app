@@ -4,6 +4,7 @@ import 'package:jsdt_app/feature/presentation/home/quiz/quiz_list/quiz_list_ui.d
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_logic.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_state.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class QuizUi extends StatelessWidget {
   static const String namePath = '/quiz_page';
@@ -97,6 +98,7 @@ class QuizUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -121,17 +123,20 @@ class QuizUi extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: kMainColor,
-              ),
-              child: Column(
-                children: state.paperOneQuiz
-                    .map((data) => childItem(quiz: data))
-                    .toList(),
+            Expanded(
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: kMainColor,
+                ),
+                child: ListView(
+                  padding: EdgeInsets.zero,
+                  children: state.paperOneQuiz
+                      .map((data) => childItem(quiz: data))
+                      .toList(),
+                ),
               ),
             )
           ],

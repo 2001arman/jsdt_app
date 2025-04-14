@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_detail/notes_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class NotesUi extends StatelessWidget {
   static const String namePath = '/notes_page';
@@ -75,6 +76,7 @@ class NotesUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(

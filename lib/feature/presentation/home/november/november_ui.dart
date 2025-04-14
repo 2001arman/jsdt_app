@@ -4,6 +4,7 @@ import 'package:jsdt_app/feature/presentation/home/ieb/ieb_detail/ieb_detail_ui.
 import 'package:jsdt_app/feature/presentation/home/june/june_detail/june_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/november/november_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 import 'package:jsdt_app/utility/shared/widgets/button_items.dart';
 
 class NovemberUi extends StatelessWidget {
@@ -23,6 +24,7 @@ class NovemberUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [

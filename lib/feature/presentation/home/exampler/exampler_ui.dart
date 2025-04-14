@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/exampler/exampler_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/activity_widget.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class ExamplerUi extends StatelessWidget {
   static const String namePath = '/exampler_ui';
@@ -29,6 +30,7 @@ class ExamplerUi extends StatelessWidget {
       length: 2,
       child: Scaffold(
         backgroundColor: kWhiteColor,
+        bottomNavigationBar: const AdsBanner(),
         appBar: AppBar(
           backgroundColor: kWhiteColor,
           title: Text(

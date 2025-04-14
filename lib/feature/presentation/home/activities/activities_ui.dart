@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class ActivitiesUi extends StatelessWidget {
   static const String namePath = '/activities_page';
@@ -75,6 +76,7 @@ class ActivitiesUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),

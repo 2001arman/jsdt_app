@@ -4,6 +4,7 @@ import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/
 import 'package:jsdt_app/feature/presentation/home/march/march_kzn/march_kzn_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 import 'package:jsdt_app/utility/shared/widgets/button_items.dart';
 
 class MarchUi extends StatelessWidget {
@@ -23,6 +24,7 @@ class MarchUi extends StatelessWidget {
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
+      bottomNavigationBar: const AdsBanner(),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
