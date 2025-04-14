@@ -1,4 +1,4 @@
-package com.example.jsdt_app
+package com.tshepo.jsdt_app
 
 import io.flutter.embedding.android.FlutterActivity
 
