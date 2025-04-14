@@ -24,14 +24,24 @@ class NovemberUi extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          ...state.juneTest.map((data) => ButtonItems(title: data)),
+          ...state.juneTest.map(
+            (data) => ButtonItems(
+              title: data,
+              ontap: () {},
+            ),
+          ),
           const SizedBox(height: 20),
           Text(
             'More Papers',
             style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
           ),
           const SizedBox(height: 15),
-          ...state.juneTestKzn.map((data) => ButtonItems(title: data)),
+          ...state.juneTestKzn.map(
+            (data) => ButtonItems(
+              title: data,
+              ontap: () {},
+            ),
+          ),
         ],
       ),
     );

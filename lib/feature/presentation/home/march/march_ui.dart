@@ -24,14 +24,24 @@ class MarchUi extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          ...state.marchTest.map((data) => ButtonItems(title: data)),
+          ...state.marchTest.map(
+            (data) => ButtonItems(
+              title: data,
+              ontap: () {},
+            ),
+          ),
           const SizedBox(height: 20),
           Text(
             'More Papers',
             style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
           ),
           const SizedBox(height: 15),
-          ...state.marchTestKzn.map((data) => ButtonItems(title: data)),
+          ...state.marchTestKzn.map(
+            (data) => ButtonItems(
+              title: data,
+              ontap: () {},
+            ),
+          ),
         ],
       ),
     );
