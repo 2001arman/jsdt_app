@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/home/ieb/ieb_detail/ieb_detail_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/june/june_detail/june_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/june/june_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/button_items.dart';
@@ -27,7 +29,10 @@ class JuneUi extends StatelessWidget {
           ...state.juneTest.map(
             (data) => ButtonItems(
               title: data,
-              ontap: () {},
+              ontap: () => Get.toNamed(
+                JuneDetailUi.namePath,
+                arguments: '$data - June Exams',
+              ),
             ),
           ),
           const SizedBox(height: 20),
@@ -39,7 +44,7 @@ class JuneUi extends StatelessWidget {
           ...state.juneTestKzn.map(
             (data) => ButtonItems(
               title: data,
-              ontap: () {},
+              ontap: () => Get.toNamed(IebDetailUi.namePath),
             ),
           ),
         ],
