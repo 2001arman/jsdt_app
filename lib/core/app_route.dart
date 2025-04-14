@@ -3,6 +3,8 @@ import 'package:jsdt_app/feature/presentation/auth/auth_binding.dart';
 import 'package:jsdt_app/feature/presentation/auth/auth_ui.dart';
 import 'package:jsdt_app/feature/presentation/boarding/boarding_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activies_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/home_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
@@ -73,6 +75,11 @@ class AppRoute {
       name: ActivitiesUi.namePath,
       page: () => ActivitiesUi(),
       binding: ActiviesBinding(),
+    ),
+    GetPage(
+      name: ActivitiesDetailUi.namePath,
+      page: () => ActivitiesDetailUi(),
+      binding: ActivitiesDetailBinding(),
     ),
     GetPage(
       name: MarchUi.namePath,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 
@@ -39,24 +40,27 @@ class ActivitiesUi extends StatelessWidget {
             ),
           ),
         ),
-      );
+    );
     }
 
     Widget childItem({required String title}) {
-      return Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(16),
-        margin: const EdgeInsets.only(bottom: 10),
-        decoration: BoxDecoration(
-          color: kWhiteColor,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: defaultBoxShadow,
-        ),
-        child: Text(
-          title,
-          style: mainTextStyle.copyWith(
-            fontSize: 16,
-            fontWeight: bold,
+      return GestureDetector(
+        onTap: () => Get.toNamed(ActivitiesDetailUi.namePath),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(16),
+          margin: const EdgeInsets.only(bottom: 10),
+          decoration: BoxDecoration(
+            color: kWhiteColor,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: defaultBoxShadow,
+          ),
+          child: Text(
+            title,
+            style: mainTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: bold,
+            ),
           ),
         ),
       );
