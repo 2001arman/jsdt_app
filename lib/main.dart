@@ -3,6 +3,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/core/app_route.dart';
 import 'package:jsdt_app/core/env.dart';
+import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 
 Future main() async {
   return Env();
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       getPages: AppRoute.routes,
       initialRoute: AppRoute.initialRoute,
       theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: kMainColor),
         menuTheme: MenuThemeData(
           style: MenuStyle(
             padding: WidgetStateProperty.all(EdgeInsets.zero),
