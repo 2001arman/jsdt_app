@@ -7,6 +7,7 @@ Color kMainColor = const Color(0xFF0F2D47);
 Color kGreyColor = const Color(0xFFDBD7D7);
 Color kWhiteGreyColor = const Color(0xFFF4F4F4);
 Color kRedColor = const Color(0xFFD31F1F);
+Color kGreySecondColor = const Color(0xFFBBB5B5);
 
 TextStyle whiteTextStyle = GoogleFonts.inter(
   color: kWhiteColor,
@@ -26,6 +27,10 @@ TextStyle greyTextStyle = GoogleFonts.inter(
 
 TextStyle redTextStyle = GoogleFonts.inter(
   color: kRedColor,
+);
+
+TextStyle gretSecondTextStyle = GoogleFonts.inter(
+  color: kGreySecondColor,
 );
 
 FontWeight light = FontWeight.w300;

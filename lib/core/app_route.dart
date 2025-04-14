@@ -33,7 +33,13 @@ import 'package:jsdt_app/feature/presentation/home/practice/practice_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/preliminary/preliminary_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_list/quiz_list_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_list/quiz_list_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_result/quiz_result_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_result/quiz_result_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quizez/quizez_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quizez/quizez_ui.dart';
 
 class AppRoute {
   static String initialRoute = BoardingUi.namePath;
@@ -76,6 +82,21 @@ class AppRoute {
       name: QuizUi.namePath,
       page: () => QuizUi(),
       binding: QuizBinding(),
+    ),
+    GetPage(
+      name: QuizListUi.namePath,
+      page: () => QuizListUi(),
+      binding: QuizListBinding(),
+    ),
+    GetPage(
+      name: QuizezUi.namePath,
+      page: () => QuizezUi(),
+      binding: QuizezBinding(),
+    ),
+    GetPage(
+      name: QuizResultUi.namePath,
+      page: () => QuizResultUi(),
+      binding: QuizResultBinding(),
     ),
     GetPage(
       name: ActivitiesUi.namePath,

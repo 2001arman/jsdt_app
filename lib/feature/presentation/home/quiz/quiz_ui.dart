@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/home/quiz/quiz_list/quiz_list_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_logic.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_state.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
@@ -44,42 +45,45 @@ class QuizUi extends StatelessWidget {
     }
 
     Widget childItem({required QuizModel quiz}) {
-      return Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(16),
-        margin: const EdgeInsets.only(bottom: 10),
-        decoration: BoxDecoration(
-          color: kWhiteColor,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: defaultBoxShadow,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              quiz.title,
-              style: mainTextStyle.copyWith(
-                fontSize: 16,
-                fontWeight: bold,
+      return GestureDetector(
+        onTap: () => Get.toNamed(QuizListUi.namePath),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(16),
+          margin: const EdgeInsets.only(bottom: 10),
+          decoration: BoxDecoration(
+            color: kWhiteColor,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: defaultBoxShadow,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                quiz.title,
+                style: mainTextStyle.copyWith(
+                  fontSize: 16,
+                  fontWeight: bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 10),
-            LinearProgressIndicator(
-              value: (quiz.done / quiz.total),
-              color: kMainColor,
-              minHeight: 10,
-              borderRadius: BorderRadius.circular(10),
-              backgroundColor: kWhiteGreyColor,
-            ),
-            const SizedBox(height: 2),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Text(
-                '${quiz.done}/${quiz.total}',
-                style: mainTextStyle.copyWith(fontWeight: bold),
+              const SizedBox(height: 10),
+              LinearProgressIndicator(
+                value: (quiz.done / quiz.total),
+                color: kMainColor,
+                minHeight: 10,
+                borderRadius: BorderRadius.circular(10),
+                backgroundColor: kWhiteGreyColor,
               ),
-            )
-          ],
+              const SizedBox(height: 2),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Text(
+                  '${quiz.done}/${quiz.total}',
+                  style: mainTextStyle.copyWith(fontWeight: bold),
+                ),
+              )
+            ],
+          ),
         ),
       );
     }
@@ -89,7 +93,7 @@ class QuizUi extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: kWhiteColor,
         title: Text(
-          'QUIZ TESTS',
+          'Quiz Tests',
           style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
         ),
       ),
