@@ -68,6 +68,7 @@ class AuthUi extends StatelessWidget {
     Widget othersInput({
       required String title,
       required List<String> values,
+      required RxString groupValue,
     }) {
       return Column(
         children: [
@@ -99,12 +100,17 @@ class AuthUi extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: values
                   .map(
-                    (data) => CheckboxMenuButton(
-                      value: true,
-                      onChanged: (f) {},
-                      child: Text(
-                        data,
-                        style: mainTextStyle,
+                    (data) => Obx(
+                      () => RadioMenuButton(
+                        groupValue: groupValue.value,
+                        value: data,
+                        onChanged: (f) {
+                          groupValue.value = data;
+                        },
+                        child: Text(
+                          data,
+                          style: mainTextStyle,
+                        ),
                       ),
                     ),
                   )
@@ -155,6 +161,7 @@ class AuthUi extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             othersInput(
+              groupValue: state.selectedGender,
               title: 'Gender:',
               values: [
                 'Male',
@@ -163,6 +170,7 @@ class AuthUi extends StatelessWidget {
               ],
             ),
             othersInput(
+              groupValue: state.selectedAge,
               title: 'Age:',
               values: [
                 '<35',
