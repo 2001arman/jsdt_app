@@ -14,23 +14,27 @@ class QuizResultUi extends StatelessWidget {
     Widget menuItem({
       required String title,
       required String icon,
+      required VoidCallback ontap,
     }) {
       return Expanded(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-          child: Column(
-            children: [
-              Image.asset(
-                icon,
-                width: 30,
-              ),
-              const SizedBox(height: 14),
-              Text(
-                title,
-                style: gretSecondTextStyle.copyWith(fontWeight: medium),
-                textAlign: TextAlign.center,
-              )
-            ],
+        child: GestureDetector(
+          onTap: ontap,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+            child: Column(
+              children: [
+                Image.asset(
+                  icon,
+                  width: 30,
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  title,
+                  style: gretSecondTextStyle.copyWith(fontWeight: medium),
+                  textAlign: TextAlign.center,
+                )
+              ],
+            ),
           ),
         ),
       );
@@ -110,6 +114,7 @@ class QuizResultUi extends StatelessWidget {
                     menuItem(
                       title: 'Retry',
                       icon: 'assets/icons/retry.png',
+                      ontap: () {},
                     ),
                     Container(
                       width: 1,
@@ -117,8 +122,9 @@ class QuizResultUi extends StatelessWidget {
                       color: kGreyColor,
                     ),
                     menuItem(
-                      title: 'Back to\nTests',
+                      title: 'Back to\nTopic 1',
                       icon: 'assets/icons/back-test.png',
+                      ontap: () => Get.close(2),
                     ),
                     Container(
                       width: 1,
@@ -128,6 +134,7 @@ class QuizResultUi extends StatelessWidget {
                     menuItem(
                       title: 'Review',
                       icon: 'assets/icons/review.png',
+                      ontap: () {},
                     ),
                   ],
                 )
