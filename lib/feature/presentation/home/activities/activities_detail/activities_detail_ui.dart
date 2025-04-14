@@ -22,7 +22,7 @@ class ActivitiesDetailUi extends StatelessWidget {
               backgroundColor: kWhiteColor,
               surfaceTintColor: kWhiteColor,
               title: Text(
-                'Paper 1 Topic 1',
+                logic.title,
                 style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
               ),
             ),

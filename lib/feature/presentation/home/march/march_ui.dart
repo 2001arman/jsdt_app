@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/march/march_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/button_items.dart';
@@ -27,7 +28,10 @@ class MarchUi extends StatelessWidget {
           ...state.marchTest.map(
             (data) => ButtonItems(
               title: data,
-              ontap: () {},
+              ontap: () => Get.toNamed(
+                ActivitiesDetailUi.namePath,
+                arguments: '$data - March Test',
+              ),
             ),
           ),
           const SizedBox(height: 20),

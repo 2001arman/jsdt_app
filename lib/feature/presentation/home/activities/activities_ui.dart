@@ -40,12 +40,12 @@ class ActivitiesUi extends StatelessWidget {
             ),
           ),
         ),
-    );
+      );
     }
 
     Widget childItem({required String title}) {
       return GestureDetector(
-        onTap: () => Get.toNamed(ActivitiesDetailUi.namePath),
+        onTap: () => Get.toNamed(ActivitiesDetailUi.namePath, arguments: title),
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(16),
