@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/home_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/shared/widgets/custom_drawer.dart';
 
 class HomeUi extends StatelessWidget {
   static const String namePath = '/home_ui';
@@ -46,61 +47,7 @@ class HomeUi extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(
-        backgroundColor: kWhiteColor,
-        child: SafeArea(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: kWhiteColor,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/image/avatar-girl.png',
-                      width: 70,
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      '[#userName]',
-                      style: mainTextStyle.copyWith(
-                        fontWeight: bold,
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              ListTile(
-                title: const Text('Home'),
-                selected: false,
-                onTap: () {
-                  // Update the state of the app
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                title: const Text('Business'),
-                selected: false,
-                onTap: () {
-                  // Update the state of the app
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                title: const Text('School'),
-                selected: true,
-                onTap: () {},
-              ),
-            ],
-          ),
-        ),
-      ),
+      drawer: const CustomDrawer(),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
