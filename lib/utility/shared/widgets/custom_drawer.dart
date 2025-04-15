@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:jsdt_app/feature/presentation/home/support/support_ui.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -165,9 +167,7 @@ class CustomDrawer extends StatelessWidget {
                 'assets/icons/support.png',
                 width: 20,
               ),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: () => Get.toNamed(SupportUi.namePath),
             ),
             ListTile(
               title: Text(

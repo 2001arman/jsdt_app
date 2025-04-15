@@ -40,6 +40,8 @@ import 'package:jsdt_app/feature/presentation/home/quiz/quiz_result/quiz_result_
 import 'package:jsdt_app/feature/presentation/home/quiz/quiz_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quizez/quizez_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/quiz/quizez/quizez_ui.dart';
+import 'package:jsdt_app/feature/presentation/home/support/support_binding.dart';
+import 'package:jsdt_app/feature/presentation/home/support/support_ui.dart';
 
 class AppRoute {
   static String initialRoute = BoardingUi.namePath;
@@ -147,6 +149,11 @@ class AppRoute {
       name: ExamplerUi.namePath,
       page: () => ExamplerUi(),
       binding: ExamplerBinding(),
+    ),
+    GetPage(
+      name: SupportUi.namePath,
+      page: () => SupportUi(),
+      binding: SupportBinding(),
     ),
   ];
 }

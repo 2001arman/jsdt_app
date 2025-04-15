@@ -9,7 +9,7 @@ class Env {
   }
 
   void _init() async {
-    WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+    WidgetsFlutterBinding.ensureInitialized();
 
     // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
     await Firebase.initializeApp(

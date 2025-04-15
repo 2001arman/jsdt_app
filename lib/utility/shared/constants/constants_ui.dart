@@ -8,6 +8,9 @@ Color kGreyColor = const Color(0xFFDBD7D7);
 Color kWhiteGreyColor = const Color(0xFFF4F4F4);
 Color kRedColor = const Color(0xFFD31F1F);
 Color kGreySecondColor = const Color(0xFFBBB5B5);
+Color kGoldColor = const Color(0xFFD3AF37);
+Color kBronzeColor = const Color(0xFF9F7833);
+Color kSilverColor = const Color(0xFFC0C0C0);
 
 TextStyle whiteTextStyle = GoogleFonts.inter(
   color: kWhiteColor,
@@ -31,6 +34,10 @@ TextStyle redTextStyle = GoogleFonts.inter(
 
 TextStyle gretSecondTextStyle = GoogleFonts.inter(
   color: kGreySecondColor,
+);
+
+TextStyle goldTextStyle = GoogleFonts.inter(
+  color: kGoldColor,
 );
 
 FontWeight light = FontWeight.w300;
