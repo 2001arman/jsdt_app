@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/support/support_ui.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
+import 'package:jsdt_app/utility/utils/custom_bottom_sheet.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -221,9 +222,7 @@ class CustomDrawer extends StatelessWidget {
                 'assets/icons/settings.png',
                 width: 20,
               ),
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: CustomBottomSheet.settingsBottomSheet,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
