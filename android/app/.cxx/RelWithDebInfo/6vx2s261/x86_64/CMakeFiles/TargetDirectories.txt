@@ -1,0 +1,2 @@
+/Users/arman/projects/jsdt_app/android/app/.cxx/RelWithDebInfo/6vx2s261/x86_64/CMakeFiles/edit_cache.dir
+/Users/arman/projects/jsdt_app/android/app/.cxx/RelWithDebInfo/6vx2s261/x86_64/CMakeFiles/rebuild_cache.dir
