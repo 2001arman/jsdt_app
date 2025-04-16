@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_detail/notes_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/notes/notes_logic.dart';
+import 'package:jsdt_app/feature/presentation/home/notes/notes_state.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
@@ -44,9 +45,9 @@ class NotesUi extends StatelessWidget {
       );
     }
 
-    Widget childItem({required String title}) {
+    Widget childItem({required NotesItem item}) {
       return GestureDetector(
-        onTap: () => Get.toNamed(NotesDetailUi.namePath),
+        onTap: () => Get.toNamed(NotesDetailUi.namePath, arguments: item),
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(16),
@@ -57,7 +58,7 @@ class NotesUi extends StatelessWidget {
             boxShadow: defaultBoxShadow,
           ),
           child: Text(
-            title,
+            item.title,
             style: mainTextStyle.copyWith(
               fontSize: 16,
               fontWeight: bold,
@@ -110,7 +111,9 @@ class NotesUi extends StatelessWidget {
               ),
               child: Column(
                 children: state.paperOneItems
-                    .map((data) => childItem(title: data))
+                    .map(
+                      (data) => childItem(item: data),
+                    )
                     .toList(),
               ),
             )

@@ -44,7 +44,7 @@ class AuthUi extends StatelessWidget {
                 const SizedBox(height: 4),
                 ...menus.map(
                   (data) => Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.only(left: 20),
                     child: CheckboxMenuButton(
                       value: true,
                       onChanged: (f) {},

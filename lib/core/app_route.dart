@@ -67,7 +67,7 @@ class AppRoute {
     ),
     GetPage(
       name: IebDetailUi.namePath,
-      page: () => IebDetailUi(),
+      page: () => const IebDetailUi(),
       binding: IebDetailBinding(),
     ),
     GetPage(

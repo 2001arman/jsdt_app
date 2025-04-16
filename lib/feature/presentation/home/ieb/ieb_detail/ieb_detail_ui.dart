@@ -99,6 +99,7 @@ class _IebDetailUiState extends State<IebDetailUi>
                         (data) => SfPdfViewer.network(
                           data,
                           canShowPageLoadingIndicator: false,
+                          canShowScrollHead: false,
                         ),
                       )
                       .toList(),
