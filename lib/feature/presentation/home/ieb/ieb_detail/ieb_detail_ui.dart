@@ -5,17 +5,42 @@ import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class IebDetailUi extends StatelessWidget {
+class IebDetailUi extends StatefulWidget {
   static const String namePath = '/ieb_detail_page';
+
+  const IebDetailUi({super.key});
+
+  @override
+  State<IebDetailUi> createState() => _IebDetailUiState();
+}
+
+class _IebDetailUiState extends State<IebDetailUi>
+    with TickerProviderStateMixin {
   final logic = Get.find<IebDetailLogic>();
   final state = Get.find<IebDetailLogic>().state;
-  IebDetailUi({super.key});
+
+  late final TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: state.items.length, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     Widget tabItem({required int index, required String title}) {
       return GestureDetector(
-        onTap: () => state.activeItem.value = index,
+        onTap: () {
+          state.activeItem.value = index;
+          _tabController.animateTo(index);
+        },
         child: Obx(
           () => Container(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
@@ -66,9 +91,17 @@ class IebDetailUi extends StatelessWidget {
               child: Container(
                 color: kMainColor,
                 padding: const EdgeInsets.all(16),
-                child: SfPdfViewer.network(
-                  'https://drive.google.com/uc?export=download&id=1afWbJ4lioAi0u8IoL2DhGu5E0xFMYc7D',
-                  
+                child: TabBarView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  controller: _tabController,
+                  children: state.items
+                      .map(
+                        (data) => SfPdfViewer.network(
+                          data,
+                          canShowPageLoadingIndicator: false,
+                        ),
+                      )
+                      .toList(),
                 ),
               ),
             ),

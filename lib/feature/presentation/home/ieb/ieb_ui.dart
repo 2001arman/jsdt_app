@@ -35,8 +35,11 @@ class IebUi extends StatelessWidget {
           const SizedBox(height: 15),
           ...state.juneExams.map(
             (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(IebDetailUi.namePath),
+              title: data.title,
+              ontap: () => Get.toNamed(
+                IebDetailUi.namePath,
+                arguments: data.items,
+              ),
             ),
           ),
           const SizedBox(height: 20),
@@ -45,10 +48,14 @@ class IebUi extends StatelessWidget {
             style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
           ),
           const SizedBox(height: 15),
-          ...state.novExams.map(
+          ...state.novemberExams.map(
             (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(IebDetailUi.namePath),
+              title: data.title,
+              ontap: () => Get.toNamed(
+                IebDetailUi.namePath,
+                arguments: data.items,
+                
+              ),
             ),
           ),
         ],
