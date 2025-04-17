@@ -1,22 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/domain/activity/activity_model.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class ActivityWidget extends StatelessWidget {
-  const ActivityWidget({super.key});
+class ActivityWidget extends StatefulWidget {
+  final ActivityItem activityItem;
+  const ActivityWidget({super.key, required this.activityItem});
+
+  @override
+  State<ActivityWidget> createState() => _ActivityWidgetState();
+}
+
+class _ActivityWidgetState extends State<ActivityWidget> {
+  YoutubePlayerController? controller;
+
+  @override
+  void initState() {
+    if (widget.activityItem.videoUrl != null) {
+      controller = YoutubePlayerController(
+        initialVideoId: widget.activityItem.videoUrl!,
+        flags: const YoutubePlayerFlags(
+          autoPlay: false,
+        ),
+      );
+    }
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     RxBool answerActive = false.obs;
     RxBool videoActive = false.obs;
-
-    YoutubePlayerController controller = YoutubePlayerController(
-      initialVideoId: 'Q29sOLG8xGE',
-      flags: const YoutubePlayerFlags(
-        autoPlay: false,
-      ),
-    );
 
     Widget button({
       required String title,
@@ -75,7 +90,9 @@ class ActivityWidget extends StatelessWidget {
         children: [
           Stack(
             children: [
-              Image.asset('assets/activity/nov21p1q2.png'),
+              InteractiveViewer(
+                child: Image.asset(widget.activityItem.qustionImage),
+              ),
               Row(
                 spacing: 5,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -103,39 +120,42 @@ class ActivityWidget extends StatelessWidget {
                   margin: EdgeInsets.symmetric(
                       vertical: answerActive.value ? 12 : 0),
                   height: answerActive.value ? null : 0,
-                  child: Image.asset(
-                    'assets/activity/nov21p1q2.png',
+                  child: InteractiveViewer(
+                    child: Image.asset(
+                      widget.activityItem.answerImage,
+                    ),
                   ),
                 ),
               ),
             ),
           ),
-          button(
-            title: 'Video Solutions',
-            isActive: videoActive,
-            child: Obx(
-              () {
-                if (videoActive.value) {
-                  controller.reset();
-                } else {
-                  controller.pause();
-                }
-                return AnimatedSize(
-                  duration: const Duration(milliseconds: 200),
-                  child: Container(
-                    margin: EdgeInsets.symmetric(
-                        vertical: videoActive.value ? 12 : 0),
-                    height: videoActive.value ? null : 0,
-                    child: YoutubePlayer(
-                      controller: controller,
-                      showVideoProgressIndicator: true,
-                      onReady: () {},
+          if (controller != null)
+            button(
+              title: 'Video Solutions',
+              isActive: videoActive,
+              child: Obx(
+                () {
+                  if (videoActive.value) {
+                    controller!.reset();
+                  } else {
+                    controller!.pause();
+                  }
+                  return AnimatedSize(
+                    duration: const Duration(milliseconds: 200),
+                    child: Container(
+                      margin: EdgeInsets.symmetric(
+                          vertical: videoActive.value ? 12 : 0),
+                      height: videoActive.value ? null : 0,
+                      child: YoutubePlayer(
+                        controller: controller!,
+                        showVideoProgressIndicator: true,
+                        onReady: () {},
+                      ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
         ],
       ),
     );

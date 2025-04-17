@@ -1,11 +1,12 @@
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/domain/activity/activity_model.dart';
 
 class ActivitiesDetailLogic extends GetxController {
-  late String title;
+  late ActivityModel activityModel;
 
   @override
   void onInit() {
-    title = Get.arguments;
+    activityModel = Get.arguments;
     super.onInit();
   }
 }

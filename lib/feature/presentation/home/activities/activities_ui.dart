@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jsdt_app/feature/domain/activity/activity_model.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
@@ -44,9 +45,10 @@ class ActivitiesUi extends StatelessWidget {
       );
     }
 
-    Widget childItem({required String title}) {
+    Widget childItem({required ActivityModel activity}) {
       return GestureDetector(
-        onTap: () => Get.toNamed(ActivitiesDetailUi.namePath, arguments: title),
+        onTap: () =>
+            Get.toNamed(ActivitiesDetailUi.namePath, arguments: activity),
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.all(16),
@@ -57,7 +59,7 @@ class ActivitiesUi extends StatelessWidget {
             boxShadow: defaultBoxShadow,
           ),
           child: Text(
-            title,
+            activity.title,
             style: mainTextStyle.copyWith(
               fontSize: 16,
               fontWeight: bold,
@@ -112,11 +114,11 @@ class ActivitiesUi extends StatelessWidget {
                 child: Obx(
                   () => Column(
                     children: state.activeTab.value == 0
-                        ? state.paperOneItems
-                            .map((data) => childItem(title: data))
+                        ? state.paperOneActivity
+                            .map((data) => childItem(activity: data))
                             .toList()
-                        : state.paperTwoItems
-                            .map((data) => childItem(title: data))
+                        : state.paperTwoActivity
+                            .map((data) => childItem(activity: data))
                             .toList(),
                   ),
                 ),

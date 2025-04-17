@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/june/june_detail/june_detail_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
-import 'package:jsdt_app/utility/shared/widgets/activity_widget.dart';
 
 class JuneDetailUi extends StatelessWidget {
   static const String namePath = '/june_detail_page';
@@ -15,11 +14,11 @@ class JuneDetailUi extends StatelessWidget {
       return ListView(
         padding: const EdgeInsets.all(20),
         children: const [
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
+          // ActivityWidget(),
+          // ActivityWidget(),
+          // ActivityWidget(),
+          // ActivityWidget(),
+          // ActivityWidget(),
         ],
       );
     }

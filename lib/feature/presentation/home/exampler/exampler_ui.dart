@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jsdt_app/feature/presentation/home/exampler/exampler_logic.dart';
 import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
-import 'package:jsdt_app/utility/shared/widgets/activity_widget.dart';
 import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 
 class ExamplerUi extends StatelessWidget {
@@ -15,13 +14,13 @@ class ExamplerUi extends StatelessWidget {
     Widget body() {
       return ListView(
         padding: const EdgeInsets.all(20),
-        children: const [
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
-          ActivityWidget(),
-        ],
+        // children: const [
+        //   ActivityWidget(),
+        //   ActivityWidget(),
+        //   ActivityWidget(),
+        //   ActivityWidget(),
+        //   ActivityWidget(),
+        // ],
       );
     }
 

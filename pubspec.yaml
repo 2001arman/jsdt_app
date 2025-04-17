@@ -72,7 +72,6 @@ flutter:
     - assets/icons/
     - assets/home/
     - assets/image/
-    - assets/notes/
     - assets/activity/
   #   - images/a_dot_ham.jpeg
 

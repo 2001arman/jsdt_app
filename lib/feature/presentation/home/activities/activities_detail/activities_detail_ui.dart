@@ -22,20 +22,16 @@ class ActivitiesDetailUi extends StatelessWidget {
               backgroundColor: kWhiteColor,
               surfaceTintColor: kWhiteColor,
               title: Text(
-                logic.title,
+                logic.activityModel.title,
                 style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
               ),
             ),
             Expanded(
               child: ListView(
                 padding: const EdgeInsets.all(20),
-                children: const [
-                  ActivityWidget(),
-                  ActivityWidget(),
-                  ActivityWidget(),
-                  ActivityWidget(),
-                  ActivityWidget(),
-                ],
+                children: logic.activityModel.items
+                    .map((data) => ActivityWidget(activityItem: data))
+                    .toList(),
               ),
             ),
             const AdsBanner(),
