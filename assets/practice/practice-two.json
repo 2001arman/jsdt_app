@@ -1,0 +1,528 @@
+[
+    {
+        "title": "Statistics",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q1.png",
+            "answerImage": "assets/practice/images/nov23p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov23p2q2.png",
+            "answerImage": "assets/practice/images/nov23p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q1.png",
+            "answerImage": "assets/practice/images/nov22p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q2.png",
+            "answerImage": "assets/practice/images/nov22p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q1.png",
+            "answerImage": "assets/practice/images/nov21p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q2.png",
+            "answerImage": "assets/practice/images/nov21p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q1.png",
+            "answerImage": "assets/practice/images/nov20p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q2.png",
+            "answerImage": "assets/practice/images/nov20p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q1.png",
+            "answerImage": "assets/practice/images/prep24gpp2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q2.png",
+            "answerImage": "assets/practice/images/prep24gpp2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q1.png",
+            "answerImage": "assets/practice/images/prep23p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q2.png",
+            "answerImage": "assets/practice/images/prep23p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q1.png",
+            "answerImage": "assets/practice/images/prep22p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q2.png",
+            "answerImage": "assets/practice/images/prep22p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq1.png",
+            "answerImage": "assets/practice/images/june24p2gpa1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq2.png",
+            "answerImage": "assets/practice/images/june24p2gpa2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q1.png",
+            "answerImage": "assets/practice/images/june22p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q2.png",
+            "answerImage": "assets/practice/images/june22p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q3.png",
+            "answerImage": "assets/practice/images/june22p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q1.png",
+            "answerImage": "assets/practice/images/exampler14p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q2.png",
+            "answerImage": "assets/practice/images/exampler14p2a2.png"
+          }
+        ]
+    },
+    {
+        "title": "Analytical Geometry",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q3.png",
+            "answerImage": "assets/practice/images/nov23p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q3.png",
+            "answerImage": "assets/practice/images/nov22p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q3.png",
+            "answerImage": "assets/practice/images/nov21p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q3.png",
+            "answerImage": "assets/practice/images/nov20p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q3.png",
+            "answerImage": "assets/practice/images/prep24gpp2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q3.png",
+            "answerImage": "assets/practice/images/prep23p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q3.png",
+            "answerImage": "assets/practice/images/prep22p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq3.png",
+            "answerImage": "assets/practice/images/june24p2gpa3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q1.png",
+            "answerImage": "assets/practice/images/june23p2a1.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q4.png",
+            "answerImage": "assets/practice/images/june22p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q3.png",
+            "answerImage": "assets/practice/images/exampler14p2a3.png"
+          }
+        ]
+    },
+
+    {
+        "title": "Analytical Geometry (Circle)",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q4.png",
+            "answerImage": "assets/practice/images/nov23p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q4.png",
+            "answerImage": "assets/practice/images/nov22p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q4.png",
+            "answerImage": "assets/practice/images/nov21p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q4.png",
+            "answerImage": "assets/practice/images/nov20p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q4.png",
+            "answerImage": "assets/practice/images/prep24gpp2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q4.png",
+            "answerImage": "assets/practice/images/prep23p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q4.png",
+            "answerImage": "assets/practice/images/prep22p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq4.png",
+            "answerImage": "assets/practice/images/june24p2gpa4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q2.png",
+            "answerImage": "assets/practice/images/june23p2a2.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q5.png",
+            "answerImage": "assets/practice/images/june22p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q4.png",
+            "answerImage": "assets/practice/images/exampler14p2a4.png"
+          }
+        ]
+    },
+
+    {
+        "title": "Trigonometry",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q5.png",
+            "answerImage": "assets/practice/images/nov23p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q5.png",
+            "answerImage": "assets/practice/images/nov22p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q5.png",
+            "answerImage": "assets/practice/images/nov21p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q6.png",
+            "answerImage": "assets/practice/images/nov21p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q6.png",
+            "answerImage": "assets/practice/images/nov20p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q5.png",
+            "answerImage": "assets/practice/images/prep24gpp2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q5.png",
+            "answerImage": "assets/practice/images/prep23p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q5.png",
+            "answerImage": "assets/practice/images/prep22p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq5.png",
+            "answerImage": "assets/practice/images/june24p2gpa5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q3.png",
+            "answerImage": "assets/practice/images/june23p2a3.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q4.png",
+            "answerImage": "assets/practice/images/june23p2a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q6.png",
+            "answerImage": "assets/practice/images/june22p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q5.png",
+            "answerImage": "assets/practice/images/exampler14p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar24gpq6.png",
+            "answerImage": "assets/practice/images/mar24gpa6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar23gp1q4.png",
+            "answerImage": "assets/practice/images/mar23gp1a4.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar22gpq4.png",
+            "answerImage": "assets/practice/images/mar22gpa4.png"
+          }
+        ]
+    },
+
+    {
+        "title": "Trigonometric Functions",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q6.png",
+            "answerImage": "assets/practice/images/nov23p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q6.png",
+            "answerImage": "assets/practice/images/nov22p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q7.png",
+            "answerImage": "assets/practice/images/nov21p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q5.png",
+            "answerImage": "assets/practice/images/nov20p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q6.png",
+            "answerImage": "assets/practice/images/prep24gpp2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q6.png",
+            "answerImage": "assets/practice/images/prep23p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q6.png",
+            "answerImage": "assets/practice/images/prep22p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq6.png",
+            "answerImage": "assets/practice/images/june24p2gpa6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q7.png",
+            "answerImage": "assets/practice/images/june22p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q6.png",
+            "answerImage": "assets/practice/images/exampler14p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar23gp1q5.png",
+            "answerImage": "assets/practice/images/mar23gp1a5.png"
+          }
+        ]
+    },
+
+    {
+        "title": "Trigonometry: 2D/3D Problems",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q7.png",
+            "answerImage": "assets/practice/images/nov23p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q7.png",
+            "answerImage": "assets/practice/images/nov22p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q8.png",
+            "answerImage": "assets/practice/images/nov21p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q7.png",
+            "answerImage": "assets/practice/images/nov20p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q7.png",
+            "answerImage": "assets/practice/images/prep24gpp2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q7.png",
+            "answerImage": "assets/practice/images/prep23p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q7.png",
+            "answerImage": "assets/practice/images/prep22p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq7.png",
+            "answerImage": "assets/practice/images/june24p2gpa7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q8.png",
+            "answerImage": "assets/practice/images/june22p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q7.png",
+            "answerImage": "assets/practice/images/exampler14p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar23gp1q6.png",
+            "answerImage": "assets/practice/images/mar23gp1a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar22gpq5.png",
+            "answerImage": "assets/practice/images/mar22gpa5.png"
+          }
+        ]
+    },
+
+    {
+        "title": "Euclidean Geometry: Grade 11",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q8.png",
+            "answerImage": "assets/practice/images/nov23p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov23p2q10.png",
+            "answerImage": "assets/practice/images/nov23p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q8.png",
+            "answerImage": "assets/practice/images/nov22p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q9.png",
+            "answerImage": "assets/practice/images/nov22p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q9.png",
+            "answerImage": "assets/practice/images/nov21p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q10.png",
+            "answerImage": "assets/practice/images/nov21p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q8.png",
+            "answerImage": "assets/practice/images/nov20p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q9.png",
+            "answerImage": "assets/practice/images/nov20p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q8.png",
+            "answerImage": "assets/practice/images/prep24gpp2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q9.png",
+            "answerImage": "assets/practice/images/prep24gpp2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q8.png",
+            "answerImage": "assets/practice/images/prep23p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q9.png",
+            "answerImage": "assets/practice/images/prep23p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q8.png",
+            "answerImage": "assets/practice/images/prep22p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq8.png",
+            "answerImage": "assets/practice/images/june24p2gpa8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq9.png",
+            "answerImage": "assets/practice/images/june24p2gpa9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q5.png",
+            "answerImage": "assets/practice/images/june23p2a5.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q6.png",
+            "answerImage": "assets/practice/images/june23p2a6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q9.png",
+            "answerImage": "assets/practice/images/june22p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q10.png",
+            "answerImage": "assets/practice/images/june22p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q8.png",
+            "answerImage": "assets/practice/images/exampler14p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar22gpq6.png",
+            "answerImage": "assets/practice/images/mar22gpa6.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar22gpq7.png",
+            "answerImage": "assets/practice/images/mar22gpa7.png"
+          }
+        ]
+    },
+    
+    {
+        "title": "Ratios, Proportions and Similarities",
+        "items": [
+          {
+            "questionImage": "assets/practice/images/nov23p2q9.png",
+            "answerImage": "assets/practice/images/nov23p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov22p2q10.png",
+            "answerImage": "assets/practice/images/nov22p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov21p2q11.png",
+            "answerImage": "assets/practice/images/nov21p2a11.png"
+          },
+          {
+            "questionImage": "assets/practice/images/nov20p2q10.png",
+            "answerImage": "assets/practice/images/nov20p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep24gpp2q10.png",
+            "answerImage": "assets/practice/images/prep24gpp2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q10.png",
+            "answerImage": "assets/practice/images/prep23p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep23p2q11.png",
+            "answerImage": "assets/practice/images/prep23p2a11.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q9.png",
+            "answerImage": "assets/practice/images/prep22p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/prep22p2q10.png",
+            "answerImage": "assets/practice/images/prep22p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june24p2gpq10.png",
+            "answerImage": "assets/practice/images/june24p2gpa10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q7.png",
+            "answerImage": "assets/practice/images/june23p2a7.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june23p2q8.png",
+            "answerImage": "assets/practice/images/june23p2a8.png"
+          },
+          {
+            "questionImage": "assets/practice/images/june22p2q11.png",
+            "answerImage": "assets/practice/images/june22p2a11.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q9.png",
+            "answerImage": "assets/practice/images/exampler14p2a9.png"
+          },
+          {
+            "questionImage": "assets/practice/images/exampler14p2q10.png",
+            "answerImage": "assets/practice/images/exampler14p2a10.png"
+          },
+          {
+            "questionImage": "assets/practice/images/mar22gpq8.png",
+            "answerImage": "assets/practice/images/mar22gpa8.png"
+          }
+        ]
+    }   
+]

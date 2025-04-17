@@ -91,7 +91,7 @@ class _ActivityWidgetState extends State<ActivityWidget> {
           Stack(
             children: [
               InteractiveViewer(
-                child: Image.asset(widget.activityItem.qustionImage),
+                child: Image.asset(widget.activityItem.questionImage),
               ),
               Row(
                 spacing: 5,
