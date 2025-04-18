@@ -30,11 +30,15 @@ class MarchUi extends StatelessWidget {
         children: [
           ...state.marchTest.map(
             (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(
-                ActivitiesDetailUi.namePath,
-                arguments: '$data - March Test',
-              ),
+              title: data.title,
+              ontap: () {
+                Get.toNamed(
+                  ActivitiesDetailUi.namePath,
+                  arguments: data.copyWith(
+                    title: '${data.title} - March Test',
+                  ),
+                );
+              },
             ),
           ),
           const SizedBox(height: 20),
@@ -45,8 +49,8 @@ class MarchUi extends StatelessWidget {
           const SizedBox(height: 15),
           ...state.marchTestKzn.map(
             (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(MarchKznUi.namePath),
+              title: data.title,
+              ontap: () => Get.toNamed(MarchKznUi.namePath, arguments: data),
             ),
           ),
         ],

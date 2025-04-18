@@ -5,18 +5,42 @@ import 'package:jsdt_app/utility/shared/constants/constants_ui.dart';
 import 'package:jsdt_app/utility/shared/widgets/ads_banner.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class MarchKznUi extends StatelessWidget {
+class MarchKznUi extends StatefulWidget {
   static const String namePath = '/march_kzn_page';
+
+  const MarchKznUi({super.key});
+
+  @override
+  State<MarchKznUi> createState() => _MarchKznUiState();
+}
+
+class _MarchKznUiState extends State<MarchKznUi> with TickerProviderStateMixin {
   final logic = Get.find<MarchKznLogic>();
   final state = Get.find<MarchKznLogic>().state;
-  MarchKznUi({super.key});
+
+  late final TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    Widget tabItem({required String title}) {
+    Widget tabItem({required String title, required int index}) {
       return Expanded(
         child: GestureDetector(
-          onTap: () => state.activeMenu.value = title,
+          onTap: () {
+            state.activeMenu.value = title;
+            _tabController.animateTo(index);
+          },
           child: Obx(
             () => Container(
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
@@ -56,16 +80,35 @@ class MarchKznUi extends StatelessWidget {
             Row(
               spacing: 2,
               children: [
-                tabItem(title: 'QUESTION PAPER'),
-                tabItem(title: 'MEMORANDUM'),
+                tabItem(
+                  title: 'QUESTION PAPER',
+                  index: 0,
+                ),
+                tabItem(
+                  title: 'MEMORANDUM',
+                  index: 1,
+                ),
               ],
             ),
             Expanded(
               child: Container(
                 color: kMainColor,
                 padding: const EdgeInsets.all(16),
-                child: SfPdfViewer.network(
-                  'https://drive.google.com/uc?export=download&id=1afWbJ4lioAi0u8IoL2DhGu5E0xFMYc7D',
+                child: TabBarView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  controller: _tabController,
+                  children: [
+                    SfPdfViewer.network(
+                      "https://drive.google.com/uc?export=download&id=${logic.kznModel.qustionPaper}",
+                      canShowPageLoadingIndicator: false,
+                      canShowScrollHead: false,
+                    ),
+                    SfPdfViewer.network(
+                      "https://drive.google.com/uc?export=download&id=${logic.kznModel.memorandum}",
+                      canShowPageLoadingIndicator: false,
+                      canShowScrollHead: false,
+                    ),
+                  ],
                 ),
               ),
             ),

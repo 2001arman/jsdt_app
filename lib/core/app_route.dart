@@ -117,7 +117,7 @@ class AppRoute {
     ),
     GetPage(
       name: MarchKznUi.namePath,
-      page: () => MarchKznUi(),
+      page: () => const MarchKznUi(),
       binding: MarchKznBinding(),
     ),
     GetPage(

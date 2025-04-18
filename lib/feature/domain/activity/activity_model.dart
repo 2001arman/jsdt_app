@@ -16,6 +16,16 @@ class ActivityModel {
           .toList(),
     );
   }
+
+  ActivityModel copyWith({
+    String? title,
+    List<ActivityItem>? items,
+  }) {
+    return ActivityModel(
+      title: title ?? this.title,
+      items: items ?? this.items,
+    );
+  }
 }
 
 class ActivityItem {
@@ -34,6 +44,18 @@ class ActivityItem {
       questionImage: json['questionImage'],
       answerImage: json['answerImage'],
       videoUrl: json['videoUrl'],
+    );
+  }
+
+  ActivityItem copyWith({
+    String? questionImage,
+    String? answerImage,
+    String? videoUrl,
+  }) {
+    return ActivityItem(
+      questionImage: questionImage ?? this.questionImage,
+      answerImage: answerImage ?? this.answerImage,
+      videoUrl: videoUrl ?? this.videoUrl,
     );
   }
 }
