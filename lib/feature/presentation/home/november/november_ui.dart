@@ -25,31 +25,38 @@ class NovemberUi extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: const AdsBanner(),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: [
-          ...state.juneTest.map(
-            (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(
-                JuneDetailUi.namePath,
-                arguments: '$data - November Exams',
+      body: Obx(
+        () => ListView(
+          padding: const EdgeInsets.all(20),
+          children: [
+            ...state.novemberTest.map(
+              (data) => ButtonItems(
+                title: data.title,
+                ontap: () => Get.toNamed(
+                  JuneDetailUi.namePath,
+                  arguments: data.copyWith(
+                    title: '${data.title} - November Exams',
+                  ),
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: 20),
-          Text(
-            'More Papers',
-            style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
-          ),
-          const SizedBox(height: 15),
-          ...state.juneTestKzn.map(
-            (data) => ButtonItems(
-              title: data,
-              ontap: () => Get.toNamed(IebDetailUi.namePath),
+            const SizedBox(height: 20),
+            Text(
+              'More Papers',
+              style: mainTextStyle.copyWith(fontSize: 22, fontWeight: bold),
             ),
-          ),
-        ],
+            const SizedBox(height: 15),
+            ...state.otherPapers.map(
+              (data) => ButtonItems(
+                title: data.title,
+                ontap: () => Get.toNamed(
+                  IebDetailUi.namePath,
+                  arguments: data.items,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
