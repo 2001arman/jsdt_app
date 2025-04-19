@@ -97,7 +97,7 @@ class _IebDetailUiState extends State<IebDetailUi>
                   children: state.items
                       .map(
                         (data) => SfPdfViewer.network(
-                          data,
+                          'https://drive.google.com/uc?export=download&id=$data',
                           canShowPageLoadingIndicator: false,
                           canShowScrollHead: false,
                         ),
