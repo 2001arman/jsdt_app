@@ -109,12 +109,19 @@ class NotesUi extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: kMainColor,
               ),
-              child: Column(
-                children: state.paperOneItems
-                    .map(
-                      (data) => childItem(item: data),
-                    )
-                    .toList(),
+              child: Obx(
+                () => Column(
+                  children: [
+                    if (state.activeTab.value == 0)
+                      ...state.paperOneItems.map(
+                        (data) => childItem(item: data),
+                      ),
+                    if (state.activeTab.value == 1)
+                      ...state.paperTwoItems.map(
+                        (data) => childItem(item: data),
+                      ),
+                  ],
+                ),
               ),
             )
           ],

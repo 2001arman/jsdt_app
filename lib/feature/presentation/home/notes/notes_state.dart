@@ -5,28 +5,32 @@ class NotesState {
 
   List<NotesItem> paperOneItems = [
     NotesItem(
-      title: 'Examination Overview',
-      linkUrl: '17h6F4nP1LKCUXrsP9cGohQUGjiGBgJAq',
+      title: 'Nature of Roots',
+      linkUrl: '1Apm93oOMhfeJBKa6QdThy_6uD_Fspg-N',
     ),
     NotesItem(
-      title: 'Algebra',
-      linkUrl: '1rOOT4gg2myWLrLLrCV2wr0wmkA5-4YNI',
+      title: 'Quadratic Equations',
+      linkUrl: '1HftZeIvEmfOUD2yHobizN-lkqq9cCbMw',
     ),
     NotesItem(
-      title: 'Sequence and Series',
-      linkUrl: '1gRJ_IhiADHHI0RohkRgPY728NMom8dqc',
+      title: 'Exponents and Surds ',
+      linkUrl: '1CwzG6NUYxVJPz_hpm2JeT8lo8JLpZS3O',
     ),
     NotesItem(
-      title: 'Functions',
-      linkUrl: '17U8ORc-zv3oheGZccJjeiDdF6vUC6qB5',
+      title: 'Sequences and Series',
+      linkUrl: '1zi6LwoIaFX4DhNhCZjqBVkYqXVfD762P',
     ),
     NotesItem(
-      title: 'Financial Mathematics',
-      linkUrl: '1smnrOJwMz2cvofaheIKMv3jXJLFRVYFu',
+      title: 'Finance, Growth and Decay',
+      linkUrl: '1GUeyss4M6xZg3lqc6GU9HeKvdjXgaACx',
+    ),
+    NotesItem(
+      title: 'Functions, Graphs and Inverses',
+      linkUrl: '1ypuNQU8eoLI8up39FJCrUGmvD17upXXn',
     ),
     NotesItem(
       title: 'Differential Calculus',
-      linkUrl: '17JeMOiGWGh_WPGc6hCaBlxwJWm7FhGJ6',
+      linkUrl: '1SMtDLpqS1HUJnKzrob4SlDunS8sR3-Pk',
     ),
     NotesItem(
       title: 'Probability',
@@ -36,24 +40,20 @@ class NotesState {
 
   List<NotesItem> paperTwoItems = [
     NotesItem(
-      title: 'Examination Overview',
-      linkUrl: '17h6F4nP1LKCUXrsP9cGohQUGjiGBgJAq',
-    ),
-    NotesItem(
-      title: 'Statistics',
-      linkUrl: '1MXd-zcF8cKbhQmfc3w9VFmQV39-LH8UP',
-    ),
-    NotesItem(
-      title: 'Analytical Geometry',
-      linkUrl: '14oa-tvD5QIMPGwDtzulQMcb1FYPiofcZ',
+      title: 'Euclidean Geometry',
+      linkUrl: '1sN6aYo62XjTPg74QLlhSokuhQMvIrbEm',
     ),
     NotesItem(
       title: 'Trigonometry',
-      linkUrl: '11Y1-2eWq1UhhqJKah-S31OxUUYhx9Ay9',
+      linkUrl: '1D9OD5nyCHAoY3cl5vGuuJ24uxESNogN3',
     ),
     NotesItem(
-      title: 'Euclidean Geometry',
-      linkUrl: '10DvDp9QIG9pWRAtmOF6OCYvketWRLXV0',
+      title: 'Analytical Geometry',
+      linkUrl: '1zcE2oFK_bdQZFmTMr3zp4ddxm_12bwJV',
+    ),
+    NotesItem(
+      title: 'Statistics',
+      linkUrl: '1TL9lV6rw2Jij_ti6-zZLtp6gQUWpj6oe',
     ),
   ];
 }
