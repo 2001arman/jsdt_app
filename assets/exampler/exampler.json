@@ -1,0 +1,106 @@
+[
+    {
+      "title": "EXAMPLER",
+      "activities": [
+        {
+          "title": "EXAMPLER 2021 P1",
+          "items": [
+            {
+              "questionImage": "assets/practice/images/exampler14p1q1.png",
+              "answerImage": "assets/practice/images/exampler14p1a1.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q2.png",
+              "answerImage": "assets/practice/images/exampler14p1a2.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q3.png",
+              "answerImage": "assets/practice/images/exampler14p1a3.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q4.png",
+              "answerImage": "assets/practice/images/exampler14p1a4.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q5.png",
+              "answerImage": "assets/practice/images/exampler14p1a5.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q6.png",
+              "answerImage": "assets/practice/images/exampler14p1a6.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q7.png",
+              "answerImage": "assets/practice/images/exampler14p1a7.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q8.png",
+              "answerImage": "assets/practice/images/exampler14p1a8.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q9.png",
+              "answerImage": "assets/practice/images/exampler14p1a9.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q10.png",
+              "answerImage": "assets/practice/images/exampler14p1a10.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q11.png",
+              "answerImage": "assets/practice/images/exampler14p1a11.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p1q12.png",
+              "answerImage": "assets/practice/images/exampler14p1a12.png"
+            }
+          ]
+        },
+        {
+          "title": "EXAMPLER 2021 P2",
+          "items": [
+            {
+              "questionImage": "assets/practice/images/exampler14p2q1.png",
+              "answerImage": "assets/practice/images/exampler14p2a1.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q2.png",
+              "answerImage": "assets/practice/images/exampler14p2a2.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q3.png",
+              "answerImage": "assets/practice/images/exampler14p2a3.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q4.png",
+              "answerImage": "assets/practice/images/exampler14p2a4.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q5.png",
+              "answerImage": "assets/practice/images/exampler14p2a5.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q6.png",
+              "answerImage": "assets/practice/images/exampler14p2a6.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q7.png",
+              "answerImage": "assets/practice/images/exampler14p2a7.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q8.png",
+              "answerImage": "assets/practice/images/exampler14p2a8.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q9.png",
+              "answerImage": "assets/practice/images/exampler14p2a9.png"
+            },
+            {
+              "questionImage": "assets/practice/images/exampler14p2q10.png",
+              "answerImage": "assets/practice/images/exampler14p2a10.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

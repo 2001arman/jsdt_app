@@ -45,7 +45,7 @@ class JuneDetailUi extends StatelessWidget {
         ),
         body: TabBarView(
           children: <Widget>[
-            body(activities: logic.juneModel.activities[0].items),
+          body(activities: logic.juneModel.activities[0].items),
             body(activities: logic.juneModel.activities[1].items),
           ],
         ),

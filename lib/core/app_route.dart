@@ -6,8 +6,6 @@ import 'package:jsdt_app/feature/presentation/home/activities/activies_binding.d
 import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_detail/activities_detail_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/activities/activities_ui.dart';
-import 'package:jsdt_app/feature/presentation/home/exampler/exampler_binding.dart';
-import 'package:jsdt_app/feature/presentation/home/exampler/exampler_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/home_binding.dart';
 import 'package:jsdt_app/feature/presentation/home/home_ui.dart';
 import 'package:jsdt_app/feature/presentation/home/ieb/ieb_binding.dart';
@@ -144,11 +142,6 @@ class AppRoute {
       name: PracticeUi.namePath,
       page: () => PracticeUi(),
       binding: PracticeBinding(),
-    ),
-    GetPage(
-      name: ExamplerUi.namePath,
-      page: () => ExamplerUi(),
-      binding: ExamplerBinding(),
     ),
     GetPage(
       name: SupportUi.namePath,
